@@ -12,7 +12,31 @@ $custom-theme-colors: (
   "bitterSweet": #fc6f6b,
 );
 
+$new-breakpoints: (
+  xs: 0,
+  sm: 400px,
+  md: 600px,
+  lg: 840px,
+  xl: 1140px,
+  xxl: 1440px,
+);
+
+$new-container-max-widths: (
+  sm: 352px,
+  md: 554px,
+  lg: 792px,
+  xl: 964px,
+  xxl: 964px,
+);
+
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
+$grid-breakpoints: map-merge($grid-breakpoints, $new-breakpoints);
+
+$container-max-widths: map-merge(
+  $container-max-widths,
+  $new-container-max-widths
+);
+
 // import bootstrap
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/bootstrap";
