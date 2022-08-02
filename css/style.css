@@ -11275,11 +11275,78 @@ textarea.form-control-lg {
   }
 }
 @font-face {
-  font-family: "ArminGrotesk";
+  font-family: "ArminGrotesk-300";
+  src: url("../fonts/Armin-Grotesk-Font/Fontspring-DEMO-armingrotesk-thin.otf");
+}
+@font-face {
+  font-family: "ArminGrotesk-400";
   src: url("../fonts/Armin-Grotesk-Font/Fontspring-DEMO-armingrotesk-normal.otf");
 }
+@font-face {
+  font-family: "ArminGrotesk-500";
+  src: url("../fonts/Armin-Grotesk-Font/Fontspring-DEMO-armingrotesk-regular.otf");
+}
+@font-face {
+  font-family: "ArminGrotesk-700";
+  src: url("../fonts/Armin-Grotesk-Font/Fontspring-DEMO-armingrotesk-black.otf");
+}
+@font-face {
+  font-family: "ArminGrotesk-800";
+  src: url("../fonts/Armin-Grotesk-Font/Fontspring-DEMO-armingrotesk-semibold.otf");
+}
+@font-face {
+  font-family: "ArminGrotesk-900";
+  src: url("../fonts/Armin-Grotesk-Font/Fontspring-DEMO-armingrotesk-ultrabold.otf");
+}
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "ArminGrotesk", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.styling-header {
+  margin: 0;
+  padding: 0.45rem 0.25rem 1.25rem 0.25rem;
+}
+
+.navbar-toggler {
+  padding: 0;
 }
 
 .menu-btn {
@@ -11290,11 +11357,13 @@ body {
   width: 33px;
   height: 33px;
   border-radius: 50%;
+  border: none;
   background-color: #edeedf;
 }
 .menu-btn--hamburger {
   width: 18px;
   height: 2px;
+  transform: translateY(-1px);
   background-color: #11284b;
 }
 .menu-btn--hamburger::before, .menu-btn--hamburger::after {
@@ -11322,8 +11391,74 @@ body {
   transform: rotate(-135deg);
 }
 
-.link--button {
-  font-size: 13px;
+.text-btn {
+  font-family: "ArminGrotesk-900";
+  font-size: 0.875rem;
   line-height: 1;
   font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.styling-btn {
+  padding: 0.5rem 1.125rem 0.5rem 1.125rem;
+  border-radius: 4px;
+}
+
+.styling-logo {
+  display: block;
+  margin: 0;
+  padding-left: 2rem;
+}
+
+.offcanvas.offcanvas-start {
+  border-right: none;
+}
+
+.styling-offcanvas {
+  margin-top: 4.95rem;
+  border-top: 1px solid #e5e5e6;
+}
+
+.offcanvas-body-container {
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.nav-link {
+  font-size: 0.8125rem;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+.nav-link:hover {
+  color: #381fd1;
+}
+
+.homepage-header--pos-rel {
+  padding: 0 1.5rem;
+  margin-top: 2.6rem;
+}
+.homepage-header--pos-rel p {
+  font-size: 1rem;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  line-height: 1.375;
+  letter-spacing: 1px;
+}
+.homepage-header--pos-rel h1, .homepage-header--pos-rel .h1 {
+  font-size: 2.5rem;
+  font-family: "ArminGrotesk-900";
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.6px;
+}
+.homepage-header--pos-rel h6, .homepage-header--pos-rel .h6 {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 700;
+  font-family: "ArminGrotesk-300";
+  letter-spacing: 0.4px;
+}
+.homepage-header--pos-rel .homepage-header--btn {
+  padding: 0.75rem 1.5rem;
 }

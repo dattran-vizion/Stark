@@ -1,3 +1,12 @@
+.styling-header {
+  margin: 0;
+  padding: 0.45rem 0.25rem 1.25rem 0.25rem;
+}
+
+.navbar-toggler {
+  padding: 0;
+}
+
 .menu-btn {
   position: relative;
   display: flex;
@@ -6,11 +15,13 @@
   width: 33px;
   height: 33px;
   border-radius: 50%;
+  border: none;
   background-color: #edeedf;
 
   &--hamburger {
     width: 18px;
     height: 2px;
+    transform: translateY(-1px);
     background-color: $catalinaBlue;
   }
 
@@ -45,8 +56,46 @@
   }
 }
 
-.link--button {
-    font-size: 13px;
-    line-height: 1;
-    font-weight: 700;
+.text-btn {
+  font-family: "ArminGrotesk-900";
+  font-size: 0.875rem;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.styling-btn {
+  padding: 0.5rem 1.125rem 0.5rem 1.125rem;
+  border-radius: 4px;
+}
+
+.styling-logo {
+  display: block;
+  margin: 0;
+  padding-left: 2rem;
+}
+
+.offcanvas.offcanvas-start {
+  border-right: none;
+}
+
+.styling-offcanvas {
+  margin-top: 4.95rem;
+  border-top: 1px solid #e5e5e6;
+}
+
+.offcanvas-body-container {
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.nav-link {
+  font-size: 0.8125rem;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+
+  &:hover {
+    color: $interdimensionalBlue;
+  }
 }
