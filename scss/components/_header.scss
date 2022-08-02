@@ -1,0 +1,52 @@
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: #edeedf;
+
+  &--hamburger {
+    width: 18px;
+    height: 2px;
+    background-color: $catalinaBlue;
+  }
+
+  &--hamburger::before,
+  &--hamburger::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background-color: $catalinaBlue;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &--hamburger::before {
+    transform: translateY(-6px);
+  }
+
+  &--hamburger::after {
+    transform: translateY(6px);
+  }
+}
+
+.isToggled .menu-btn {
+  &--hamburger {
+    background: transparent;
+  }
+  &--hamburger::before {
+    transform: rotate(135deg);
+  }
+  &--hamburger::after {
+    transform: rotate(-135deg);
+  }
+}
+
+.link--button {
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 700;
+}

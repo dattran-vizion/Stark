@@ -11280,4 +11280,50 @@ textarea.form-control-lg {
 }
 body {
   font-family: "ArminGrotesk", sans-serif;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: #edeedf;
+}
+.menu-btn--hamburger {
+  width: 18px;
+  height: 2px;
+  background-color: #11284b;
+}
+.menu-btn--hamburger::before, .menu-btn--hamburger::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background-color: #11284b;
+  transition: all 0.2s ease-in-out;
+}
+.menu-btn--hamburger::before {
+  transform: translateY(-6px);
+}
+.menu-btn--hamburger::after {
+  transform: translateY(6px);
+}
+
+.isToggled .menu-btn--hamburger {
+  background: transparent;
+}
+.isToggled .menu-btn--hamburger::before {
+  transform: rotate(135deg);
+}
+.isToggled .menu-btn--hamburger::after {
+  transform: rotate(-135deg);
+}
+
+.link--button {
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 700;
+}
