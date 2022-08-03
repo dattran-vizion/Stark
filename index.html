@@ -1,100 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Stark</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css" />
-  <title>Stark</title>
-</head>
+  <body class="bg-ivoryWhite">
+    <div class="overflow-x-hidden relative">
+      <header class="relative">
+        <nav
+          class="container d-flex justify-content-between align-items-center nav-padding"
+        >
+          <!-- Hamburger button -->
+          <div class="hamburger-btn hidden-for-tablet">
+            <div class="menu-btn">
+              <div class="menu-btn--hamburger"></div>
+            </div>
+          </div>
 
-<body class="bg-ivoryWhite">
-  <header class="navbar navbar-expand-lg sticky-top styling-header">
-    <nav class="container-fluid container-lg bd-gutter d-flex align-content-center" aria-label="Main navigation">
+          <!-- Stark Logo -->
+          <div class="hidden-for-desktop logo-styling">
+            <svg
+              width="42"
+              height="42"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-labelledby="starkLogoNavigation"
+              class="t-color-blue"
+            >
+              <title id="starkLogoNavigation" lang="en">Stark logo</title>
+              <rect width="64" height="64" rx="32" fill="#11284b"></rect>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M31.0399 47.9701V43.1582C34.3333 43.4448 37.5845 42.2588 39.9196 39.919C43.6395 36.1988 44.2697 30.3917 41.4344 25.9603L25.9596 41.4337L22.5097 44.8833C21.8636 44.406 21.254 43.881 20.6862 43.3128C14.4379 37.0651 14.4379 26.9352 20.6862 20.6871C23.92 17.4463 28.39 15.7502 32.9599 16.0298V20.8418C29.6666 20.5552 26.4154 21.7412 24.0803 24.0809C20.3604 27.8011 19.7302 33.6082 22.5655 38.0397L38.0402 22.5665L41.4903 19.1169C42.1364 19.5942 42.746 20.1192 43.3138 20.6874C49.5621 26.9351 49.5621 37.065 43.3138 43.3131C40.0799 46.5539 35.6099 48.2499 31.0399 47.9701Z"
+                fill="white"
+              ></path>
+            </svg>
+          </div>
 
-      <!-- Hamburger button -->
-      <div class="navbar-toggler menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar">
-        <div class="menu-btn--hamburger"></div>
+          <div class="hidden-for-phone">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-labelledby="starkLogoNavigation"
+              class="t-color-blue"
+            >
+              <title id="starkLogoNavigation" lang="en">Stark logo</title>
+              <rect width="64" height="64" rx="32" fill="#11284b"></rect>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M31.0399 47.9701V43.1582C34.3333 43.4448 37.5845 42.2588 39.9196 39.919C43.6395 36.1988 44.2697 30.3917 41.4344 25.9603L25.9596 41.4337L22.5097 44.8833C21.8636 44.406 21.254 43.881 20.6862 43.3128C14.4379 37.0651 14.4379 26.9352 20.6862 20.6871C23.92 17.4463 28.39 15.7502 32.9599 16.0298V20.8418C29.6666 20.5552 26.4154 21.7412 24.0803 24.0809C20.3604 27.8011 19.7302 33.6082 22.5655 38.0397L38.0402 22.5665L41.4903 19.1169C42.1364 19.5942 42.746 20.1192 43.3138 20.6874C49.5621 26.9351 49.5621 37.065 43.3138 43.3131C40.0799 46.5539 35.6099 48.2499 31.0399 47.9701Z"
+                fill="white"
+              ></path>
+            </svg>
+          </div>
+
+          <!-- Navbar list -->
+          <div class="navbar-nav show-for-tablet">
+            <ul class="nav-items">
+              <li class="nav-item">
+                <a class="nav-link text-uppercase text-catalinaBlue" href="#"
+                  >Pricing</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase text-catalinaBlue" href="#"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase text-catalinaBlue" href="#"
+                  >Community</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase text-catalinaBlue" href="#"
+                  >Library</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase text-catalinaBlue" href="#"
+                  >Support</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase text-catalinaBlue" href="#"
+                  >Mac beta</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase text-catalinaBlue" href="#"
+                  >Log in</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <a href="#"
+            ><button
+              class="singUp-btn bg-interdimensionalBlue singUp-text text-white text-uppercase"
+            >
+              Sign up
+            </button></a
+          >
+        </nav>
+      </header>
+
+      <div class="offcanvas hidden-for-tablet absolute">
+        <ul class="offcanvas-items">
+          <li class="offcanvas-item">
+            <a class="offcanvas-link text-uppercase text-catalinaBlue" href="#"
+              >Pricing</a
+            >
+          </li>
+          <li class="offcanvas-item">
+            <a class="offcanvas-link text-uppercase text-catalinaBlue" href="#"
+              >Blog</a
+            >
+          </li>
+          <li class="offcanvas-item">
+            <a class="offcanvas-link text-uppercase text-catalinaBlue" href="#"
+              >Community</a
+            >
+          </li>
+          <li class="offcanvas-item">
+            <a class="offcanvas-link text-uppercase text-catalinaBlue" href="#"
+              >Library</a
+            >
+          </li>
+          <li class="offcanvas-item">
+            <a class="offcanvas-link text-uppercase text-catalinaBlue" href="#"
+              >Support</a
+            >
+          </li>
+          <li class="offcanvas-item">
+            <a class="offcanvas-link text-uppercase text-catalinaBlue" href="#"
+              >Mac beta</a
+            >
+          </li>
+          <li class="offcanvas-item">
+            <a class="offcanvas-link text-uppercase text-catalinaBlue" href="#"
+              >Log in</a
+            >
+          </li>
+        </ul>
       </div>
 
-      <!-- Stark Logo -->
-      <a class="navbar-brand styling-logo" href="#" aria-label="starkLogo">
-        <svg width="42" height="42" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"
-          aria-labelledby="starkLogoNavigation" class="t-color-blue">
-          <title id="starkLogoNavigation" lang="en">Stark logo</title>
-          <rect width="64" height="64" rx="32" fill="#11284b"></rect>
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M31.0399 47.9701V43.1582C34.3333 43.4448 37.5845 42.2588 39.9196 39.919C43.6395 36.1988 44.2697 30.3917 41.4344 25.9603L25.9596 41.4337L22.5097 44.8833C21.8636 44.406 21.254 43.881 20.6862 43.3128C14.4379 37.0651 14.4379 26.9352 20.6862 20.6871C23.92 17.4463 28.39 15.7502 32.9599 16.0298V20.8418C29.6666 20.5552 26.4154 21.7412 24.0803 24.0809C20.3604 27.8011 19.7302 33.6082 22.5655 38.0397L38.0402 22.5665L41.4903 19.1169C42.1364 19.5942 42.746 20.1192 43.3138 20.6874C49.5621 26.9351 49.5621 37.065 43.3138 43.3131C40.0799 46.5539 35.6099 48.2499 31.0399 47.9701Z"
-            fill="white"></path>
-        </svg>
-      </a>
-
-      <!-- Offcanvas -->
-      <div class="offcanvas w-100 mt-lg-0 offcanvas-start bg-ivoryWhite styling-offcanvas" tabindex="-1"
-        id="offcanvasNavbar" data-bs-backdrop="false" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-body offcanvas-body-container">
-          <ul class="navbar-nav justify-content-start flex-grow-1">
-            <li class="nav-item">
-              <a class="nav-link text-uppercase text-catalinaBlue" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase text-catalinaBlue" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase text-catalinaBlue" href="#">Community</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase text-catalinaBlue" href="#">Library</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase text-catalinaBlue" href="#">Support</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase text-catalinaBlue" href="#">Mac beta</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase text-catalinaBlue" href="#">Log in</a>
-            </li>
-          </ul>
+      <main>
+        <div class="container">
+          <div class="intro">
+            <p class="text-interdimensionalBlue text-mono">INTRODUCING STARK</p>
+            <h1>Make the world’s software more accessible</h1>
+            <h6 class="text-large">
+              More than 500,000 designers, developers and product managers at
+              companies of all sizes have used Stark’s integrated suite of tools
+              to make their software products more accessible and compliant.
+              Join them and get started today!
+            </h6>
+            <div class="btn-group">
+              <a href="#"
+                ><button
+                  class="link-btn bg-interdimensionalBlue text-white"
+                  id="signUpFree-btn"
+                >
+                  Sign up for free
+                </button></a
+              >
+              <a href="#"
+                ><button
+                  class="link-btn bg-ivoryWhite text-gray"
+                  id="learnMore-btn"
+                >
+                  Learn more
+                </button></a
+              >
+            </div>
+          </div>
+          <div class="intro-image"></div>
         </div>
-      </div>
 
-      <!-- Sign up button -->
-      <a type="button" class="btn styling-btn bg-interdimensionalBlue text-btn text-uppercase text-white">
-        Sign up
-      </a>
-    </nav>
-  </header>
+        <div
+          class="container d-flex flex-direction-col align-items-center text-align-center styling-section"
+        >
+          <div class="action">
+            <p class="text-mono text-interdimensionalBlue">CHECK IT OUT</p>
+            <h1 class="text-header">See Stark in action.</h1>
+            <h6 class="text-large">
+              Baked right into Figma, Sketch, Adobe XD and Google Chrome, watch
+              how Stark makes designing with accessibility in mind easier than
+              ever before.
+            </h6>
+          </div>
+          <div class="image-platfom">
+            <div class="fixed-image-platfom">
+              <svg
+                viewBox="0 0 960 638"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                style="max-width: 960px; width: 100%; height: 100%"
+              >
+                <path
+                  d="M960 299.635C960 482.448 687.699 616 466.785 616C245.871 616 160 482.448 160 299.635C160 116.823 216.849 0 437.763 0C693.68 0 960 116.823 960 299.635Z"
+                  fill="#FEDB63"
+                ></path>
+                <path
+                  d="M669 380.614C669 526.2 571.051 638 408.833 638C246.615 638 0 471.662 0 326.076C0 180.49 197.395 162 359.612 162C521.83 162 669 235.028 669 380.614Z"
+                  fill="#FC6F6B"
+                  fill-opacity="0.8"
+                ></path>
+              </svg>
+            </div>
+            <div class="change-image">
+              <img src="./images/figma-action-4.png" alt="figma-action">
+            </div>
+          </div>
 
-  <main>
-    <div class="container-fluid homepage-header--pos-rel">
-      <div class="row">
-        <div class="col-12">
-          <p class="text-uppercase text-interdimensionalBlue">introducing stark</p>
-          <h1 class="text-catalinaBlue mt-3">Make the world’s software more accessible</h1>
-          <h6 class="text-darkLiver mt-3">More than 500,000 designers, developers and product managers at companies of
-            all
-            sizes have used Stark’s
-            integrated suite of tools to make their software products more accessible and compliant. Join them and get
-            started today!</h6>
+          <div class="homepage-platform--items">
+            <div class="homepage-platform--item">
+              
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="row ">
-        <div class="col-12">
-          <button class="text-white bg-interdimensionalBlue border-0 homepage-header--btn">Sign up for free</button>
-          <button class="bg-ivoryWhite border-interdimensionalBlue homepage-header--btn">Learn more</button>
-        </div>
-      </div>
+      </main>
     </div>
-  </main>
 
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="./script.js"></script>
-</body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>

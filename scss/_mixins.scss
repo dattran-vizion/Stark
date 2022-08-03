@@ -1,0 +1,28 @@
+$smphone-width: 280px;
+$smtablet-width: 600px;
+$tablet-width: 840px;
+$desktop-width: 1140px;
+
+@mixin smphone {
+  @media (smphone-width: #{$galaxyFold}) {
+    @content;
+  }
+}
+
+@mixin smtablet {
+  @media (min-width: #{$smtablet-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

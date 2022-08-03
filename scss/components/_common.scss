@@ -1,5 +1,5 @@
 html {
-  font-size: 100%;
+  font-size: 62.5%;
   box-sizing: border-box;
 }
 
@@ -10,7 +10,6 @@ html {
 }
 
 body {
-  font-family: "ArminGrotesk", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -27,10 +26,132 @@ ul {
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
 }
 
 img {
   display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 964px;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 100%;
+}
+
+.bg-ivoryWhite {
+  background-color: $ivoryWhite;
+}
+.bg-interdimensionalBlue {
+  background-color: $interdimensionalBlue;
+}
+.bg-dandelionYellow {
+  background-color: $dandelionYellow;
+}
+.bg-catalinaBlue {
+  background-color: $catalinaBlue;
+}
+.bg-darkLiver {
+  background-color: $darkLiver;
+}
+.bg-bitterSweet {
+  background-color: $bitterSweet;
+}
+
+.text-gray {
+  color: #4b4b4e;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-ivoryWhite {
+  color: $ivoryWhite;
+}
+.text-interdimensionalBlue {
+  color: $interdimensionalBlue;
+}
+.text-dandelionYellow {
+  color: $dandelionYellow;
+}
+.text-catalinaBlue {
+  color: $catalinaBlue;
+}
+.text-darkLiver {
+  color: $darkLiver;
+}
+.text-bitterSweet {
+  color: $bitterSweet;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.flex-direction-col {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.align-items-center {
+  align-items: center;
 }

@@ -1,29 +1,20 @@
 @font-face {
-  font-family: "ArminGrotesk-300";
-  src: url("../fonts/Armin-Grotesk-Font/Fontspring-DEMO-armingrotesk-thin.otf");
-}
-
-@font-face {
   font-family: "ArminGrotesk-400";
-  src: url("../fonts/Armin-Grotesk-Font/Fontspring-DEMO-armingrotesk-normal.otf");
+  font-weight: 400;
+  src: url("../fonts/ArminGroteskRegular.otf");
 }
-
 @font-face {
   font-family: "ArminGrotesk-500";
-  src: url("../fonts/Armin-Grotesk-Font/Fontspring-DEMO-armingrotesk-regular.otf");
+  font-weight: 500;
+  src: url("../fonts/ArminGroteskSemiBold.otf");
 }
-
-@font-face {
-  font-family: "ArminGrotesk-700";
-  src: url("../fonts/Armin-Grotesk-Font/Fontspring-DEMO-armingrotesk-black.otf");
-}
-
-@font-face {
-  font-family: "ArminGrotesk-800";
-  src: url("../fonts/Armin-Grotesk-Font/Fontspring-DEMO-armingrotesk-semibold.otf");
-}
-
 @font-face {
   font-family: "ArminGrotesk-900";
-  src: url("../fonts/Armin-Grotesk-Font/Fontspring-DEMO-armingrotesk-ultrabold.otf");
+  font-weight: 900;
+  src: url("../fonts/ArminGroteskBlack.otf");
+}
+@font-face {
+  font-family: "RobotoMono-700";
+  font-weight: 700;
+  src: url("../fonts/RobotoMonoBold.ttf");
 }
